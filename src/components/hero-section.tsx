@@ -61,14 +61,14 @@ export const HeroSection = () => {
         >
           <Button 
             size="lg"
-            className="bg-gradient-accent text-charcoal font-semibold hover:shadow-glow transition-all duration-300 px-8 py-4 text-lg animate-pulse-soft"
+            className="bg-gradient-accent text-charcoal font-semibold hover:shadow-glow transition-all duration-300 px-8 py-4 text-lg"
           >
             Contactez Nous
           </Button>
           <Button 
             variant="outline"
             size="lg"
-            className="border-background text-background hover:bg-background hover:text-sage-dark transition-all duration-300 px-8 py-4 text-lg"
+            className="border-background text-black hover:bg-background hover:text-sage-dark transition-all duration-300 px-8 py-4 text-lg"
           >
             Découvrir nos services
           </Button>

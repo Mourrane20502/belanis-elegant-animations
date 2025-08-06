@@ -34,7 +34,7 @@ const services = [
 
 export const ServicesSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20">
       <div className="container mx-auto px-4">
         <AnimatedSection animation="fade-in" className="text-center mb-16">
           <span className="text-sage text-sm font-medium tracking-wider uppercase">

@@ -60,7 +60,7 @@ export const OffersSection = () => {
   const [hoveredOffer, setHoveredOffer] = useState<number | null>(null);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-sage-light/20 to-gold-light/20">
+    <section className="py-20">
       <div className="container mx-auto px-4">
         <AnimatedSection animation="fade-in" className="text-center mb-16">
           <motion.div
