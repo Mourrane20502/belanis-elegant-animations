@@ -8,11 +8,11 @@ export const Navigation = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-sage-light/20"
+      className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-sage-light/20 shadow-soft"
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <motion.div 
-          className="flex items-center space-x-3 relative overflow-hidden"
+          className="flex items-center space-x-3 relative overflow-hidden hover-card cursor-pointer"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
@@ -39,10 +39,11 @@ export const Navigation = () => {
             <motion.a
               key={item}
               href="#"
-              className="text-sage-dark hover:text-sage transition-colors font-medium relative group"
+              className="text-sage-dark text-hover-sage transition-colors font-medium relative group cursor-pointer"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * index, duration: 0.5 }}
+              whileHover={{ scale: 1.05 }}
             >
               {item}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-accent group-hover:w-full transition-all duration-300"></span>
@@ -57,7 +58,7 @@ export const Navigation = () => {
         >
           <Button 
             variant="default"
-            className="bg-gradient-accent text-charcoal font-semibold hover:shadow-glow transition-all duration-300 animate-pulse-soft"
+            className="bg-gradient-accent text-charcoal font-semibold hover-button animate-pulse-soft"
           >
             RÉSERVATION
           </Button>

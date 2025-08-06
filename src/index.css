@@ -131,3 +131,63 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  /* Hover fixes and improvements */
+  .hover-card {
+    @apply transition-all duration-300 hover:shadow-hover hover:-translate-y-2;
+  }
+  
+  .hover-button {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-glow;
+  }
+  
+  .hover-image {
+    @apply transition-transform duration-500 hover:scale-110;
+  }
+  
+  .dropdown-menu {
+    @apply bg-card border border-border shadow-lg rounded-lg z-50 backdrop-blur-sm;
+  }
+  
+  .dropdown-item {
+    @apply px-4 py-2 text-foreground hover:bg-sage-light/20 hover:text-sage transition-colors duration-200;
+  }
+  
+  /* Text hover effects */
+  .text-hover-gold {
+    @apply transition-colors duration-300 hover:text-gold;
+  }
+  
+  .text-hover-sage {
+    @apply transition-colors duration-300 hover:text-sage;
+  }
+  
+  /* Background hover effects */
+  .bg-hover-sage {
+    @apply transition-colors duration-300 hover:bg-sage;
+  }
+  
+  .bg-hover-gold {
+    @apply transition-colors duration-300 hover:bg-gold;
+  }
+  
+  /* Border hover effects */
+  .border-hover-sage {
+    @apply transition-colors duration-300 hover:border-sage;
+  }
+  
+  /* Gradient hover effects */
+  .gradient-hover {
+    @apply relative overflow-hidden;
+  }
+  
+  .gradient-hover::before {
+    @apply absolute inset-0 bg-gradient-primary opacity-0 transition-opacity duration-300;
+    content: '';
+  }
+  
+  .gradient-hover:hover::before {
+    @apply opacity-10;
+  }
+}
